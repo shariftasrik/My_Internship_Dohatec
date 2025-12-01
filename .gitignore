@@ -32,9 +32,8 @@ application.yml
 # IDEs and Editors
 # VS Code
 .vscode/
-.history/ # Specific user request
-history/
-.vs/ # Specific user request
+.history/
+.vs/ 
 
 # IntelliJ/JetBrains
 .idea/
