@@ -1,0 +1,49 @@
+<section class="skills">
+  <div class="skills-container">
+  <div class="skills-header">
+    <h1>My Skills</h1>
+    <p class="subtitle">Technologies and tools I work with</p>
+  </div>
+
+  <div class="skills-content">
+    <div class="category-grid">
+      <div class="skill-category" *ngFor="let category of skillCategories">
+        <div class="category-header">
+          <span class="category-icon">{{ category.icon }}</span>
+          <h2>{{ category.title }}</h2>
+        </div>
+        
+        <div class="skills-list">
+          <div class="skill-item" *ngFor="let skill of category.skills">
+            <div class="skill-info">
+              <span class="skill-name">{{ skill.name }}</span>
+              <span class="skill-label" [style.color]="getLevelColor(skill.level)">
+                {{ getLevelLabel(skill.level) }}
+              </span>
+            </div>
+            <div class="progress-bar">
+              <div 
+                class="progress-fill" 
+                [style.width.%]="skill.level"
+                [style.background]="getLevelColor(skill.level)">
+              </div>
+            </div>
+            <span class="skill-percentage">{{ skill.level }}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-summary">
+      <div class="summary-card">
+        <h3>Continuous Learning</h3>
+        <p>I'm constantly expanding my skill set and staying up-to-date with the latest technologies and best practices in web development.</p>
+      </div>
+      <div class="summary-card">
+        <h3>Practical Experience</h3>
+        <p>These skills are honed through real-world projects, problem-solving, and delivering production-ready applications.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>

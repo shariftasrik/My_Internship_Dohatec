@@ -1,0 +1,12 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class Auth {
+  role = signal<string>('');
+
+  constructor(){
+    const savedRole = localStorage.
+  }
+}

@@ -1,0 +1,19 @@
+.login-container {
+  width: 360px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.08);
+}
+
+.login-form label {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.btn-primary {
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,13 @@
+<nav class="navbar bg-light px-3">
+  <a class="navbar-brand" href="#">Role Demo</a>
+
+  <div class="ms-auto">
+    @if( auth.role() === '' ){
+      <button routerLink="login" class="btn btn-outline-primary">Login</button>
+    }
+
+    @if( auth.role() === 'admin' ){
+      
+    }
+  </div>
+</nav>

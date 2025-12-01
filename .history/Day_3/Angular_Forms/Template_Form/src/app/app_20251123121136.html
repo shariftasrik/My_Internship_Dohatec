@@ -1,0 +1,22 @@
+<h1>Template Driven Forms</h1>
+
+
+<form #userForm="ngForm" >
+  <input type="text" placeholder="Enter Name" name="name">
+  
+  <br><br>
+  <input type="password" placeholder="Enter Password" name="password" >
+  <br><br>
+  <select name="gender">
+    <option value="">Select Gender</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+  <br><br>
+  <input type="range" min="0" max="70" name="range">
+  <br><br>
+  <input type="email" placeholder="Enter Email" name="email">
+  <br><br>
+  <button>Add User</button>
+
+</form>

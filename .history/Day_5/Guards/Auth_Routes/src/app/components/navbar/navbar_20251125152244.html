@@ -1,0 +1,30 @@
+<nav class="navbar" style="background-color: #e3f2fd" data-bs-theme="light">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+
+    <!-- Left: Brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+
+    <!-- Middle: Nav links -->
+    <ul class="navbar-nav flex-row gap-3">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Admin</a>
+      </li>
+    </ul>
+
+    <!-- Right: Login -->
+    @if(loggedUserName === ''){
+      <button class="btn btn-outline-primary" type="button" routerLink="login">
+        Login
+      </button>
+    } @else{
+      <button class="btn btn-outline-primary" routerLink="login">
+        Logged User Name
+      </button>
+      <button class="btn btn-outline-primary" routerLink="login">
+        LogOut
+      </button>
+
+    }
+
+  </div>
+</nav>

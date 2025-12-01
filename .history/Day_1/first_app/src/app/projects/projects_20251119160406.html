@@ -1,0 +1,86 @@
+<section class="projects">
+  <div class="projects-container">
+    <div class="projects-header">
+      <h1>My Projects</h1>
+      <p class="subtitle">Showcasing my recent work and side projects</p>
+    </div>
+
+    <!-- <div class="filters">
+      <button
+        class="filter-btn"
+        [class.active]="filteredFilter() === 'all'"
+        (click)="setFilter('all')"
+      >
+        All Projects
+      </button>
+      <button
+        class="filter-btn"
+        [class.active]="filteredFilter() === 'completed'"
+        (click)="setFilter('completed')"
+      >
+        Completed
+      </button>
+      <button
+        class="filter-btn"
+        [class.active]="filteredFilter() === 'in-progress'"
+        (click)="setFilter('in-progress')"
+      >
+        In Progress
+      </button>
+      <button
+        class="filter-btn"
+        [class.active]="filteredFilter() === 'planned'"
+        (click)="setFilter('planned')"
+      >
+        Planned
+      </button>
+    </div> -->
+
+    <!-- <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of filteredProjects">
+        <div class="project-image">
+          <span class="project-emoji">{{ project.image }}</span>
+          <div class="status-badge" [style.background]="getStatusColor(project.status)">
+            {{ getStatusLabel(project.status) }}
+          </div>
+        </div>
+
+        <div class="project-content">
+          <h3>{{ project.title }}</h3>
+          <p class="project-description">{{ project.description }}</p>
+
+          <div class="technologies">
+            <span class="tech-tag" *ngFor="let tech of project.technologies">
+              {{ tech }}
+            </span>
+          </div>
+
+          <div class="project-links">
+            <a
+              *ngIf="project.github"
+              [href]="project.github"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-btn github"
+            >
+              <span>GitHub</span>
+            </a>
+            <a
+              *ngIf="project.demo"
+              [href]="project.demo"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="link-btn demo"
+            >
+              <span>Live Demo</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="empty-state" *ngIf="filteredProjects.length === 0">
+      <p>No projects found in this category.</p>
+    </div>
+  </div>
+</section>

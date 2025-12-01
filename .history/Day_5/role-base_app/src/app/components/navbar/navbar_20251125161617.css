@@ -1,0 +1,58 @@
+/* Navbar container styling */
+.navbar {
+  padding: 12px 20px;
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #dfe3e8;
+  display: flex;
+  align-items: center;
+}
+
+/* Brand text */
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1a3d7c !important;
+}
+
+/* Right side container */
+.navbar .ms-auto {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Admin/User text */
+.navbar .fw-bold {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Login / Logout Button Styling */
+.btn-outline-primary,
+.btn-outline-danger {
+  padding: 6px 16px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Hover animations */
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #ffffff;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+/* Smooth icon/text spacing */
+.me-2 {
+  margin-right: 10px !important;
+}
+
+/* Optional shadow for a modern look */
+.navbar {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}

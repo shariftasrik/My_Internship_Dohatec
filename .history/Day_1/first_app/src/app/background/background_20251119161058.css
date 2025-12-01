@@ -1,0 +1,186 @@
+/* Section styling */
+.background {
+  background: #f8f9fa;
+  padding: 80px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.background-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.background-header h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #1e293b; /* dark blue-gray */
+  margin-bottom: 10px;
+}
+
+.background-header .subtitle {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #475569; /* soft gray-blue */
+  margin-bottom: 50px;
+}
+
+/* Section Header */
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  color: #1e293b;
+}
+
+.section-icon {
+  font-size: 2rem;
+}
+
+/* Timeline */
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #cbd5e1; /* soft gray */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.timeline-marker {
+  width: 14px;
+  height: 14px;
+  background: #2563eb; /* soft blue */
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 5px;
+}
+
+/* Experience Card */
+.experience-card {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experience-header h3 {
+  margin: 0;
+  color: #1e293b;
+}
+
+.experience-header .company {
+  font-size: 0.95rem;
+  color: #475569;
+}
+
+.period {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.achievements h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.achievements ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #475569;
+}
+
+/* Education Grid */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
+.education-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.education-card h3 {
+  margin-bottom: 5px;
+  color: #1e293b;
+}
+
+.education-card .institution {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 5px;
+}
+
+.education-card .period {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.education-card .description {
+  font-size: 0.95rem;
+  color: #334155;
+  margin-top: 5px;
+}
+
+/* Certifications Grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.cert-icon {
+  font-size: 2rem;
+  color: #16a34a; /* green checkmark */
+}
+
+.cert-info h4 {
+  margin: 0;
+  color: #1e293b;
+}
+
+.cert-info .issuer {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+.cert-info .year {
+  fo

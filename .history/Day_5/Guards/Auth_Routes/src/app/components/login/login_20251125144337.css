@@ -1,0 +1,68 @@
+/* Center the login box on the page */
+.login-container {
+  width: 380px;
+  margin: 80px auto;
+  padding: 35px 30px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e5eaf0;
+}
+
+/* Centered title */
+.login-container h2 {
+  font-weight: 600;
+  color: #0d3e66;
+}
+
+/* Label styling */
+.login-form label {
+  font-weight: 500;
+  color: #0a2a45;
+  margin-bottom: 4px;
+}
+
+/* Input fields */
+.login-form .form-control {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #b9cad9;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Input focus effect */
+.login-form .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+/* Error text */
+.text-danger {
+  margin-top: 4px;
+  font-size: 0.85rem;
+}
+
+/* Login button styling */
+button[type="submit"] {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 1.15rem;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+
+/* Button hover */
+button[type="submit"]:hover {
+  background-color: #0a58ca;
+}
+
+/* Responsive (for mobile) */
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    margin-top: 40px;
+    padding: 25px 20px;
+  }
+}

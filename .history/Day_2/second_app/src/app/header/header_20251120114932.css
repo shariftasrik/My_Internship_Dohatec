@@ -1,0 +1,10 @@
+.nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link ul{
+  display: flex;
+  flex-direction: row;
+  gap
+}

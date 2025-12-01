@@ -1,0 +1,21 @@
+<div class="login-page">
+  <div class="login-box">
+    <h3 class="title">Login</h3>
+
+    <input 
+      class="form-control"
+      type="email"
+      placeholder="Enter Email"
+      [(ngModel)]="loginForm.email"
+    />
+
+    <input 
+      class="form-control"
+      type="password"
+      placeholder="Enter Password"
+      [(ngModel)]="loginForm.password"
+    />
+
+    <button class="btn-login" (click)="onSubmit()">Login</button>
+  </div>
+</div>

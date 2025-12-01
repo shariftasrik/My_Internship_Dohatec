@@ -1,0 +1,24 @@
+/* Hero section right below navbar */
+.hero {
+  margin-top: 60px; /* same as navbar height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: calc(100vh - 60px); /* full screen minus navbar */
+  padding: 1rem;
+  text-align: center;
+  background: var(--gray-400); /* optional background */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: var(--gray-900);
+  margin: 0;
+}
+
+.hero-content p {
+  color: var(--gray-700);
+  margin-top: 1rem;
+  font-size: 1.25rem;
+}

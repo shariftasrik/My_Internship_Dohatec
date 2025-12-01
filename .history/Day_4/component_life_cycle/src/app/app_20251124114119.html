@@ -1,0 +1,6 @@
+<h1>Components Life Cycle Hook</h1>
+
+<button (click)="updateCounter()">{{counter}}</button>
+<div *ngIf="counter%5!=0">
+  <app-user [counter]="counter"></app-user>
+</div>

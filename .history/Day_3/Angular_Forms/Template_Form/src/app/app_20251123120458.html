@@ -1,0 +1,18 @@
+<h1>Template Driven Forms</h1>
+
+
+<form>
+  <input type="text" placeholder="Enter Name">
+  
+  <br><br>
+  <input type="password" placeholder="Enter Password" formControlName="password" >
+  <span *ngIf="password?.hasError('required')">*</span>
+  <span class="error" *ngIf="password?.invalid &&(name?.dirty || name?.touched) ">Please Enter Valid Password</span>
+  <br><br>
+  <input type="email" placeholder="Enter Email" formControlName="email">
+  <span *ngIf="email?.hasError('required')">*</span>
+  <span class="error" *ngIf="email?.invalid &&(name?.dirty || name?.touched) ">Please Enter Valid Email</span>
+  <br><br> -->
+  <button>Submit</button>
+
+</form>

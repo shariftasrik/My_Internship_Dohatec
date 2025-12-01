@@ -1,0 +1,17 @@
+import { Component, resource } from '@angular/core';
+
+@Component({
+  selector: 'app-resource-api',
+  imports: [],
+  templateUrl: './resource-api.html',
+  styleUrl: './resource-api.css',
+})
+export class ResourceApi {
+
+  // resource-api with promise
+  userData = resource({
+    loader:()=>{
+      return 
+    }
+  })
+}

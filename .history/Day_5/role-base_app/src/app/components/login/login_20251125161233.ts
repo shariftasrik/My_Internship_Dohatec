@@ -1,0 +1,33 @@
+import { Component, inject } from '@angular/core';
+import { Auth } from '../../services/auth';
+import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
+@Component({
+  selector: 'app-login',
+  standalone: true,
+  imports: [FormsModule],
+  templateUrl: './login.html',
+  styleUrl: './login.css',
+})
+export class Login {
+  auth = inject(Auth);
+  router = inject(Router);
+
+  loginForm = {
+    email: '',
+    password: ''
+  }
+
+  onSubmit(){
+    if(this.loginForm.email === 'admin@gmail.com' && this.loginForm.password === '1122'){
+      this.auth.login('admin');
+      this.router.navigateByUrl('/admin');
+    }else if(this.loginForm.email === 'user@gmail.com' && this.loginForm.password === '2211'){
+      this.auth.login('user');
+      this.router.navigateByUrl("/user");
+    }else{
+      alert("Invalid role or credential");
+    }
+  }
+}
