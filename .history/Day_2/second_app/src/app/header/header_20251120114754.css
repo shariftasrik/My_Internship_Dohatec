@@ -1,9 +1,0 @@
-.nav{
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-link{
-  display: flex;
-  flex-direction: row;
-}
