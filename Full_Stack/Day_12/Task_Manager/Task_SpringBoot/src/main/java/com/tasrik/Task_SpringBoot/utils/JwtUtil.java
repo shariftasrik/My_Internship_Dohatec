@@ -1,6 +1,7 @@
 package com.tasrik.Task_SpringBoot.utils;
 
 import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
@@ -61,8 +62,20 @@ public class JwtUtil {
     }
 
     public boolean validateJwtToken(String jwt  ) {
+         try {
+            Jwts.parser()
+                    .setSigningKey(getSigninKey())
+                    .build()
+                    .parseClaimsJws(jwt);
+            return true;
+
+        } catch (JwtException | IllegalArgumentException e) {
+            System.out.println("Invalid JWT: " + e.getMessage());
+            return false;
+        }
     }
 
     public String getUserFromToken(String jwt) {
+        return extractUserName(jwt);
     }
 }

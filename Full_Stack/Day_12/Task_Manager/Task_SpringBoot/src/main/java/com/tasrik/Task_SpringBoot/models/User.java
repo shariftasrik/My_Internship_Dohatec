@@ -1,10 +1,7 @@
 package com.tasrik.Task_SpringBoot.models;
 
 import com.tasrik.Task_SpringBoot.enums.UserRole;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.Data;
 import org.jspecify.annotations.Nullable;
 import org.springframework.security.core.GrantedAuthority;
@@ -16,14 +13,17 @@ import java.util.List;
 
 @Data
 @Entity
+@Table(name = "users")
 public class User implements UserDetails {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String name;
     private String email;
     private String password;
+
+    @Enumerated(EnumType.STRING)
     private UserRole userRole;
 
     @Override
