@@ -32,7 +32,7 @@ application.yml
 # IDEs and Editors
 # VS Code
 .vscode/
-.history/
+.history
 .vs/ 
 
 # IntelliJ/JetBrains

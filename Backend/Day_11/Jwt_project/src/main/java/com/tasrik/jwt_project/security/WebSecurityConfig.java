@@ -23,8 +23,8 @@ public class WebSecurityConfig {
     @Autowired
     private AuthEntryPointJwt unauthorizedHandler;
 
-    @Autowired
-    private AuthTokenFilter authTokenFilter;
+//    @Autowired
+//    private AuthTokenFilter authTokenFilter;
 
     @Bean
     public AuthTokenFilter authenticationJwtTokenFilter(){
