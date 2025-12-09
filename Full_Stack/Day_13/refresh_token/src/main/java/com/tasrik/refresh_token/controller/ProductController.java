@@ -16,32 +16,33 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    public ResponseEntity<?> getAllProduct(){
+    public ResponseEntity<?> getAllProduct() {
         return ResponseEntity.ok(productService.getAllProducts());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getProductById(@PathVariable Long id){
+    public ResponseEntity<?> getProductById(@PathVariable Long id) {
         return ResponseEntity.ok(productService.getProductById(id));
     }
 
-    @PostMapping("/products")
+    @PostMapping
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<?> saveProduct(@Valid @RequestBody Product product){
+    public ResponseEntity<?> saveProduct(@Valid @RequestBody Product product) {
         return ResponseEntity.ok(productService.saveProduct(product));
     }
 
     @PutMapping("/{id}")
-    @PreAuthorize("hasRole('ADMIN)")
-    public ResponseEntity<?> updateProduct(@PathVariable Long id, @Valid @RequestBody Product product){
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<?> updateProduct(@PathVariable Long id, @Valid @RequestBody Product product) {
+        product.setId(id);
         return ResponseEntity.ok(productService.saveProduct(product));
     }
 
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ADMIN')")
-    public ResponseEntity<?> deleteProduct(@PathVariable Long id){
+    public ResponseEntity<?> deleteProduct(@PathVariable Long id) {
         productService.deleteById(id);
-
         return ResponseEntity.ok("Product deleted successfully");
     }
+
 }

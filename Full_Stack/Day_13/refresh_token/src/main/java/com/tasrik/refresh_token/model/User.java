@@ -16,15 +16,21 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long Id;
+    private Long id;
 
-    @Column(name = "full_name", nullable= false)
+    @Column(
+            name = "full_name",
+            nullable = false
+    )
     private String fullName;
 
-    @Column(nullable = false, unique = true)
+   @Column(
+            nullable = false,
+            unique = true
+    )
     private String username;
 
-    @Column(nullable = false )
+    @Column(nullable = false)
     private String password;
 
     @Enumerated(EnumType.STRING)
