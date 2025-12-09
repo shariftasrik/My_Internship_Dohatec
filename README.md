@@ -49,8 +49,10 @@
     • Fetch backend data in frontend
     • Render data dynamically in Angular
     • Introduction to Spring Security
-    • Basics of JWT authentication
-    • OAuth2 Authentication using Google and Github
+    • Basics of JWT authentication 
+    • Implementation of JWT authentication
+    • Implementation of Access Token with JWT
+    • Implementation of Refresh Token
     • Roles and Permissions
     
 
