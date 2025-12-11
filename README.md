@@ -1,5 +1,5 @@
 # 📘 Dohatec Internship – What I Learned
-    Codes are available in Day_Wise Branches
+    Codes are available in Day_Wise Nested folders
     
 ### 📅 Frontend ( Angular )
 
@@ -49,11 +49,13 @@
     • Fetch backend data in frontend
     • Render data dynamically in Angular
     • Introduction to Spring Security
+    • Roles and Permissions
     • Basics of JWT authentication 
     • Implementation of JWT authentication
     • Implementation of Access Token with JWT
     • Implementation of Refresh Token
-    • Roles and Permissions
+    • Swegger API Documentation
+    
     
 
 ### ✨ Summary
