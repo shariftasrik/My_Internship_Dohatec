@@ -54,7 +54,7 @@
     • Implementation of JWT authentication
     • Implementation of Access Token with JWT
     • Implementation of Refresh Token
-    • Swegger API Documentation
+    • Swagger API Documentation
     
     
 
